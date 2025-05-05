@@ -1,0 +1,67 @@
+/* Improved styles for CalculatorNoJSX component */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+div {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  width: 360px;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 140px;
+  padding: 10px 12px;
+  margin: 12px 8px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 18px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #667eea;
+  outline: none;
+}
+
+button {
+  background-color: #667eea;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  margin: 12px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(102,126,234,0.4);
+}
+
+button:hover {
+  background-color: #5a67d8;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+div > div:last-child {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 22px;
+  color: #444;
+  min-height: 28px;
+}
